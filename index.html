@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Bingsu Reno · Korean Shaved Snow Desserts in Reno, NV</title>
+  <meta name="description" content="Bingsu Reno is a Korean dessert truck serving fluffy milk-snow bingsu — Strawberry Cheesecake, Mango, Oreo, Injeolmi and Melon — plus our new Mango Sticky Rice Matcha. Open Wed–Sat in Reno, NV." />
+  <meta name="theme-color" content="#F8D3D6" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Bingsu Reno · Korean Shaved Snow Desserts" />
+  <meta property="og:description" content="Fluffy Korean milk-snow bingsu, made fresh from our pink truck in Reno, NV. Wed–Sat." />
+  <meta property="og:image" content="assets/img/og-image.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" type="image/png" href="assets/img/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400;1,9..144,500&family=Gowun+Batang:wght@400;700&family=Jost:wght@400;500;600&family=Nanum+Pen+Script&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FoodEstablishment",
+    "name": "Bingsu Reno",
+    "servesCuisine": ["Korean", "Desserts"],
+    "description": "Korean dessert truck serving bingsu (shaved milk snow ice) in Reno, Nevada.",
+    "image": "assets/img/og-image.jpg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "10500 Stead Blvd",
+      "addressLocality": "Reno",
+      "addressRegion": "NV",
+      "addressCountry": "US"
+    },
+    "openingHoursSpecification": [
+      {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Wednesday","Thursday"], "opens": "17:00", "closes": "20:00"},
+      {"@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "17:00", "closes": "21:00"},
+      {"@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "16:00", "closes": "21:00"}
+    ],
+    "sameAs": ["https://www.instagram.com/bingsu_reno/", "https://www.tiktok.com/@bingsu_reno"]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- ============ HEADER ============ -->
+  <header class="nav" id="top">
+    <div class="nav__inner">
+      <a href="#top" class="brand" aria-label="Bingsu Reno home">
+        <img src="assets/img/logo.png" alt="" width="44" height="44" />
+        <span class="brand__name">Bingsu <em>Reno</em></span>
+      </a>
+      <nav class="nav__links" aria-label="Main">
+        <a href="#menu">Menu</a>
+        <a href="#moments">Moments</a>
+        <a href="#visit">Visit</a>
+        <a href="#story">Our story</a>
+      </nav>
+      <a class="status-pill" href="#visit" data-status>
+        <span class="dot"></span><span data-status-text>Checking hours…</span>
+      </a>
+      <button class="nav__toggle" aria-label="Open menu" aria-expanded="false" aria-controls="drawer">
+        <span></span><span></span>
+      </button>
+    </div>
+    <div class="drawer" id="drawer" hidden>
+      <a href="#menu">Menu</a>
+      <a href="#moments">Moments</a>
+      <a href="#visit">Visit &amp; hours</a>
+      <a href="#story">Our story</a>
+      <a href="https://www.instagram.com/bingsu_reno/" target="_blank" rel="noopener">Instagram ↗</a>
+      <a href="https://www.tiktok.com/@bingsu_reno" target="_blank" rel="noopener">TikTok ↗</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <canvas class="snow" aria-hidden="true"></canvas>
+      <div class="hero__inner wrap">
+        <div class="hero__copy">
+          <p class="eyebrow">Korean dessert truck · Reno, Nevada</p>
+          <h1 class="hero__title">Soft as<br /><em>fresh snow.</em></h1>
+          <p class="hero__ko" lang="ko">눈꽃처럼 부드러운 행복</p>
+          <p class="hero__lede">
+            Bingsu is Korea’s favourite way to cool down — milk ice shaved so fine it falls like snow,
+            piled high with fresh fruit, cheesecake, rice cakes and a little taiyaki fish on top.
+            We make every bowl to order from our pink truck.
+          </p>
+          <div class="hero__cta">
+            <a href="#menu" class="btn btn--primary">See the menu</a>
+            <a href="#visit" class="btn btn--ghost">Find the truck</a>
+          </div>
+          <ul class="hero__facts">
+            <li><strong>Wed–Sat</strong><span>evenings</span></li>
+            <li><strong>3.1K+</strong><span>Reno followers</span></li>
+            <li><strong>Made</strong><span>fresh to order</span></li>
+          </ul>
+        </div>
+
+        <div class="hero__media">
+          <div class="arch">
+            <video src="assets/video/melon-truck.mp4" poster="assets/video/melon-truck.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Melon bingsu in front of the Bingsu Reno truck"></video>
+          </div>
+          <div class="seal" aria-hidden="true">
+            <svg viewBox="0 0 200 200">
+              <defs><path id="circ" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0" /></defs>
+              <text><textPath href="#circ" textLength="486" lengthAdjust="spacing">KOREAN DESSERTS · BINGSU RENO · MADE FRESH ·</textPath></text>
+            </svg>
+            <img src="assets/img/logo.png" alt="" />
+          </div>
+          <p class="hand-note">“I might have found the best dessert in Reno” ♡</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ RIBBON ============ -->
+    <div class="ribbon" aria-hidden="true">
+      <div class="ribbon__track">
+        <span>Strawberry Cheesecake</span><i>❄</i><span>Mango</span><i>❄</i><span>Oreo</span><i>❄</i><span>Injeolmi 인절미</span><i>❄</i><span>Melon</span><i>❄</i><span>Sweet Red Bean</span><i>❄</i><span>Mango Sticky Rice Matcha</span><i>❄</i>
+        <span>Strawberry Cheesecake</span><i>❄</i><span>Mango</span><i>❄</i><span>Oreo</span><i>❄</i><span>Injeolmi 인절미</span><i>❄</i><span>Melon</span><i>❄</i><span>Sweet Red Bean</span><i>❄</i><span>Mango Sticky Rice Matcha</span><i>❄</i>
+      </div>
+    </div>
+
+    <!-- ============ WHAT IS BINGSU ============ -->
+    <section class="ritual wrap" id="story">
+      <header class="section-head">
+        <p class="eyebrow">What is bingsu?</p>
+        <h2>A bowl of Korean snow,<br /><em>built in three layers.</em></h2>
+      </header>
+      <ol class="ritual__steps">
+        <li class="reveal">
+          <span class="num">01</span>
+          <h3>The snow <span lang="ko">눈꽃</span></h3>
+          <p>Frozen milk is shaved into feather-light flakes that melt the moment they touch your spoon. Never crunchy, never icy.</p>
+        </li>
+        <li class="reveal">
+          <span class="num">02</span>
+          <h3>The toppings <span lang="ko">토핑</span></h3>
+          <p>Fresh strawberries, ripe mango, cheesecake, chewy rice cakes, roasted soybean powder, sweet red bean — stacked by hand.</p>
+        </li>
+        <li class="reveal">
+          <span class="num">03</span>
+          <h3>The share <span lang="ko">나눔</span></h3>
+          <p>Bingsu is made for sharing. Grab a couple of spoons, a friend, and dig in from the top down. <em>Sweet moments, share happiness.</em></p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ============ MENU ============ -->
+    <section class="menu" id="menu">
+      <div class="wrap">
+        <header class="section-head section-head--split">
+          <div>
+            <p class="eyebrow">The menu · 메뉴</p>
+            <h2>Premium bingsu,<br /><em>made fresh every bowl.</em></h2>
+          </div>
+          <div class="menu__tabs" role="tablist" aria-label="Menu categories" data-menu-tabs></div>
+        </header>
+        <div class="menu__grid" data-menu-grid aria-live="polite"></div>
+        <p class="menu__foot">
+          Prices and flavours may change with the season · <span data-menu-updated></span><br />
+          Have an allergy? Please ask us at the window before ordering.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ FEATURE: NEW DRINK ============ -->
+    <section class="feature wrap">
+      <div class="feature__card reveal">
+        <div class="feature__img">
+          <img src="assets/img/flyer-mango-matcha.webp" alt="Mango Sticky Rice Matcha flyer — 16 oz for $6.95 with a free lip charm" loading="lazy" />
+        </div>
+        <div class="feature__copy">
+          <p class="eyebrow">New at the window</p>
+          <h2>Mango Sticky Rice <em>Matcha</em></h2>
+          <p>Earthy matcha floated over a creamy sticky-rice blend and fresh mango — a Thai-dessert classic, reimagined as a layered iced drink.</p>
+          <div class="price-tag"><span>16 oz</span><strong>$6.95</strong></div>
+          <div class="perk">
+            <span class="perk__icon">🎀</span>
+            <div><strong>Free lip charm</strong> with every drink purchase.<br /><small>While supplies last.</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ QUIZ ============ -->
+    <section class="quiz" id="quiz">
+      <div class="wrap quiz__inner">
+        <header class="section-head">
+          <p class="eyebrow">Can’t decide?</p>
+          <h2>Find your <em>bingsu match.</em></h2>
+          <p class="section-sub">Two quick questions. One perfect bowl.</p>
+        </header>
+        <div class="quiz__card" data-quiz>
+          <div class="quiz__step is-active" data-step="1">
+            <p class="quiz__q">What are you craving tonight?</p>
+            <div class="quiz__opts">
+              <button data-pick="fruity">🍓 Something fruity</button>
+              <button data-pick="creamy">🍰 Rich &amp; creamy</button>
+              <button data-pick="nutty">🌰 Nutty &amp; traditional</button>
+              <button data-pick="choco">🍪 Cookies &amp; chocolate</button>
+            </div>
+          </div>
+          <div class="quiz__step" data-step="2">
+            <p class="quiz__q">And the vibe?</p>
+            <div class="quiz__opts">
+              <button data-pick2="photo">📸 Photo-worthy showstopper</button>
+              <button data-pick2="classic">🤍 A cozy classic</button>
+              <button data-pick2="tropical">🌴 Tropical &amp; bright</button>
+            </div>
+          </div>
+          <div class="quiz__step quiz__result" data-step="3">
+            <img data-result-img alt="" />
+            <div>
+              <p class="eyebrow">Your match</p>
+              <h3 data-result-name></h3>
+              <p data-result-desc></p>
+              <div class="quiz__actions">
+                <a href="#visit" class="btn btn--primary">Come get it</a>
+                <button class="btn btn--ghost" data-quiz-reset>Try again</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MOMENTS (VIDEOS) ============ -->
+    <section class="moments" id="moments">
+      <div class="wrap">
+        <header class="section-head section-head--split">
+          <div>
+            <p class="eyebrow">Moments · 순간</p>
+            <h2>Straight from<br /><em>the truck window.</em></h2>
+          </div>
+          <a class="btn btn--ghost" href="https://www.tiktok.com/@bingsu_reno" target="_blank" rel="noopener">More on TikTok ↗</a>
+        </header>
+
+        <div class="reels">
+          <figure class="reel reel--feature reveal">
+            <div class="reel__frame">
+              <video src="assets/video/best-dessert-review.mp4" poster="assets/video/best-dessert-review.jpg" muted loop playsinline preload="none" data-reel></video>
+              <button class="reel__sound" data-sound aria-label="Play with sound">🔈 Tap for sound</button>
+            </div>
+            <figcaption><strong>“Best dessert in Reno”</strong><span>A local food creator stopped by the truck.</span></figcaption>
+          </figure>
+          <figure class="reel reveal">
+            <div class="reel__frame">
+              <video src="assets/video/melon-truck.mp4" poster="assets/video/melon-truck.jpg" muted loop playsinline preload="none" data-reel></video>
+            </div>
+            <figcaption><strong>Melon bingsu</strong><span>Served in a real melon.</span></figcaption>
+          </figure>
+          <figure class="reel reveal">
+            <div class="reel__frame">
+              <video src="assets/video/mango-drizzle.mp4" poster="assets/video/mango-drizzle.jpg" muted loop playsinline preload="none" data-reel></video>
+            </div>
+            <figcaption><strong>The final drizzle</strong><span>Mango cheesecake, finished to order.</span></figcaption>
+          </figure>
+          <figure class="reel reel--square reveal">
+            <div class="reel__frame">
+              <video src="assets/video/strawberry-gold.mp4" poster="assets/video/strawberry-gold.jpg" muted loop playsinline preload="none" data-reel></video>
+            </div>
+            <figcaption><strong>Strawberry cheesecake</strong><span>Our customer favourite.</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ VISIT ============ -->
+    <section class="visit wrap" id="visit">
+      <div class="visit__card reveal">
+        <div class="visit__info">
+          <p class="eyebrow">Visit the truck</p>
+          <h2>Bingsu days<br /><em>are back.</em></h2>
+          <div class="visit__now" data-status-big>
+            <span class="dot"></span><span data-status-text>Checking hours…</span>
+          </div>
+
+          <table class="hours" aria-label="Opening hours">
+            <tbody data-hours>
+              <tr data-day="3"><th>Wednesday</th><td>5:00 – 8:00 PM</td></tr>
+              <tr data-day="4"><th>Thursday</th><td>5:00 – 8:00 PM</td></tr>
+              <tr data-day="5"><th>Friday</th><td>5:00 – 9:00 PM</td></tr>
+              <tr data-day="6"><th>Saturday</th><td>4:00 – 9:00 PM</td></tr>
+              <tr data-day="0" class="closed"><th>Sun – Tue</th><td>Closed</td></tr>
+            </tbody>
+          </table>
+
+          <address>
+            <span class="pin">📍</span>
+            <span><strong>10500 Stead Blvd</strong><br />Reno, Nevada</span>
+          </address>
+          <p class="visit__note">We’re a truck, so pop-up spots can change. Hours and locations are posted every week on Instagram — check before you head out.</p>
+          <div class="visit__cta">
+            <a class="btn btn--primary" href="https://www.google.com/maps/dir/?api=1&destination=10500+Stead+Blvd+Reno+NV" target="_blank" rel="noopener">Get directions</a>
+            <a class="btn btn--ghost" href="https://www.instagram.com/bingsu_reno/" target="_blank" rel="noopener">This week on Instagram ↗</a>
+          </div>
+        </div>
+        <div class="visit__map">
+          <iframe title="Map to Bingsu Reno, 10500 Stead Blvd" src="https://www.google.com/maps?q=10500+Stead+Blvd,+Reno,+NV&z=14&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <img class="visit__flyer" src="assets/img/flyer-hours.webp" alt="Bingsu Reno weekly hours flyer" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ GALLERY ============ -->
+    <section class="gallery">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="eyebrow">From our feed</p>
+          <h2>Too pretty <em>not to share.</em></h2>
+        </header>
+        <div class="gallery__grid">
+          <button class="g g--tall" data-lightbox="assets/img/injeolmi-red-bean.webp"><img src="assets/img/injeolmi-red-bean.webp" alt="Injeolmi bingsu with sweet red bean, almonds and taiyaki" loading="lazy" /></button>
+          <button class="g" data-lightbox="assets/img/oreo-bingsu.webp"><img src="assets/img/oreo-bingsu.webp" alt="Oreo bingsu in a gold bowl" loading="lazy" /></button>
+          <button class="g" data-lightbox="assets/img/melon-bingsu.webp"><img src="assets/img/melon-bingsu.webp" alt="Melon bingsu held in front of the pink truck" loading="lazy" /></button>
+          <button class="g g--tall" data-lightbox="assets/img/menu-premium.webp"><img src="assets/img/menu-premium.webp" alt="Premium bingsu menu" loading="lazy" /></button>
+          <button class="g" data-lightbox="assets/video/strawberry-gold.jpg"><img src="assets/video/strawberry-gold.jpg" alt="Strawberry cheesecake bingsu" loading="lazy" /></button>
+          <button class="g" data-lightbox="assets/video/mango-drizzle.jpg"><img src="assets/video/mango-drizzle.jpg" alt="Mango cheesecake bingsu with Pocky" loading="lazy" /></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ STICKERS ============ -->
+    <section class="stickers wrap">
+      <div class="stickers__card reveal">
+        <img class="stickers__img" src="assets/img/sticker.webp" alt="Bingsu Reno sticker — Sweet moments, share happiness" loading="lazy" />
+        <div>
+          <p class="eyebrow">Limited drop · coming soon</p>
+          <h2>Our very own <em>stickers.</em></h2>
+          <p>Made with love and a little extra cuteness. Follow along so you don’t miss the drop — they’re for a limited time only.</p>
+          <a class="btn btn--primary" href="https://www.instagram.com/bingsu_reno/" target="_blank" rel="noopener">Turn on post notifications 🔔</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="faq wrap">
+      <header class="section-head">
+        <p class="eyebrow">Good to know</p>
+        <h2>Little <em>questions.</em></h2>
+      </header>
+      <div class="faq__list">
+        <details>
+          <summary>How do you pronounce bingsu?</summary>
+          <p>“Bing-soo” (빙수). It literally means “ice water” in Korean — but ours is much fluffier than that sounds.</p>
+        </details>
+        <details>
+          <summary>Is one bowl enough to share?</summary>
+          <p>Our bowls are generous, and bingsu is traditionally shared — two people per bowl is the sweet spot.</p>
+        </details>
+        <details>
+          <summary>What is injeolmi?</summary>
+          <p>Injeolmi (인절미) is a traditional Korean rice cake coated in roasted soybean powder. It gives bingsu a nutty, toasty, not-too-sweet flavour.</p>
+        </details>
+        <details>
+          <summary>Where will the truck be this week?</summary>
+          <p>Our regular spot is 10500 Stead Blvd in Reno, Wednesday to Saturday. Pop-up locations are announced on our Instagram and TikTok each week.</p>
+        </details>
+        <details>
+          <summary>Can we book the truck for an event?</summary>
+          <p>Send us a DM on <a href="https://www.instagram.com/bingsu_reno/" target="_blank" rel="noopener">Instagram</a> with your date, location and guest count and we’ll get back to you.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- ============ FOLLOW ============ -->
+    <section class="follow">
+      <div class="wrap follow__inner">
+        <img src="assets/img/logo.png" alt="" class="follow__logo" loading="lazy" />
+        <h2>Sweet moments,<br /><em>share happiness.</em></h2>
+        <p>Follow <strong>@bingsu_reno</strong> for weekly hours, pop-ups, new flavours and sticker drops.</p>
+        <div class="follow__cta">
+          <a class="social" href="https://www.instagram.com/bingsu_reno/" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg>
+            Instagram
+          </a>
+          <a class="social" href="https://www.tiktok.com/@bingsu_reno" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3v11.5a3.5 3.5 0 1 1-3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M14 3c.4 2.6 2.2 4.4 5 4.6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            TikTok
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <div class="footer__brand">
+        <img src="assets/img/logo.png" alt="Bingsu Reno logo" width="56" height="56" loading="lazy" />
+        <div>
+          <strong>Bingsu Reno</strong>
+          <span>Korean desserts · Reno, NV</span>
+        </div>
+      </div>
+      <div class="footer__cols">
+        <div>
+          <h4>Hours</h4>
+          <p>Wed–Thu 5–8 PM<br />Fri 5–9 PM<br />Sat 4–9 PM<br />Sun–Tue closed</p>
+        </div>
+        <div>
+          <h4>Find us</h4>
+          <p>10500 Stead Blvd<br />Reno, Nevada<br /><a href="https://www.instagram.com/bingsu_reno/" target="_blank" rel="noopener">Weekly pop-ups ↗</a></p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <p><a href="#menu">Menu</a><br /><a href="#moments">Moments</a><br /><a href="#quiz">Bingsu match</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="wrap footer__base">
+      <span>© <span data-year></span> Bingsu Reno. All rights reserved.</span>
+      <span>Website by <a href="https://www.nexoradigital.live" target="_blank" rel="noopener">Nexora Digital</a></span>
+    </div>
+  </footer>
+
+  <!-- Mobile action bar -->
+  <nav class="actionbar" aria-label="Quick actions">
+    <a href="#menu">🍧 Menu</a>
+    <a href="https://www.google.com/maps/dir/?api=1&destination=10500+Stead+Blvd+Reno+NV" target="_blank" rel="noopener">📍 Directions</a>
+    <a href="https://www.instagram.com/bingsu_reno/" target="_blank" rel="noopener">🔔 Updates</a>
+  </nav>
+
+  <!-- Lightbox -->
+  <div class="lightbox" hidden data-lightbox-view>
+    <button class="lightbox__close" aria-label="Close">×</button>
+    <img alt="" />
+  </div>
+
+  <script src="menu.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
