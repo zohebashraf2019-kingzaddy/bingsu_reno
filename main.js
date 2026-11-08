@@ -5,6 +5,24 @@
   const $$ = (s, el = document) => Array.from(el.querySelectorAll(s));
   const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
+  /* ---------- Always start at the top on load / refresh ---------- */
+  if ("scrollRestoration" in history) history.scrollRestoration = "manual";
+  const toTop = (smooth) => {
+    if (location.hash) history.replaceState(null, "", location.pathname + location.search);
+    window.scrollTo({ top: 0, behavior: smooth && !reduced ? "smooth" : "auto" });
+  };
+  toTop(false);
+  addEventListener("load", () => toTop(false));
+  addEventListener("pageshow", e => { if (e.persisted) toTop(false); });
+
+  /* Logo → back to the top */
+  $$("[data-home]").forEach(a => a.addEventListener("click", e => {
+    e.preventDefault();
+    toTop(true);
+    const d = $("#drawer"); if (d) d.hidden = true;
+    const t = $(".nav__toggle"); if (t) t.setAttribute("aria-expanded", "false");
+  }));
+
   /* ---------- Nav ---------- */
   const nav = $(".nav");
   const toggle = $(".nav__toggle");
